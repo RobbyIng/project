@@ -50,7 +50,12 @@
       width: 75px;
       height: 75px;
   }
-
+.features{
+  padding: 50px 10px;
+}
+.cards{
+  grid-template-columns: auto;
+}
   .form {
       padding: 50px 10px;
   }
@@ -153,6 +158,21 @@ header a {
     padding: 20px 25px;
     margin-top: 20px;
 
+  }
+  .features{
+    background-color: white;
+    padding: 115px 60px;
+  }
+  .cards{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  .card{
+    padding: 35px 40px 25px 40px;
+    border: 1px solid #D9E4E6;
+    border-radius: 5px;
   }
   .form__container{
 width: 550px;
