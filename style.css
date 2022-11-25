@@ -56,6 +56,36 @@
 .cards{
   grid-template-columns: auto;
 }
+.features__feedback{
+  flex-direction: column;
+}
+.features__feedback-left{
+  margin-right: 0px;
+}
+.features__feedback-left h2{
+  font-size: 36px;
+  }
+  .features__feedback-right{
+   flex-direction: column;
+  }
+  .features__box h3{
+    font-size: 36px;
+  }
+  .features__savings-box{
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .promo{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .promo__image{
+    width: 100%;
+    height: 500px;
+  }
+  .promo__right{
+    padding: 50px 10px;
+  }
   .form {
       padding: 50px 10px;
   }
@@ -204,8 +234,91 @@ header a {
     margin-bottom: 50px;
     border: 1px solid #E6EAF4;
   }
+  .features__feedback{
+    display: flex;
+  }
   .form__container{
 width: 550px;
+  }
+  .features__feedback-left{
+    margin-right: 10px;
+  }
+  .features__feedback-left h2{
+  font-size: 48px;
+  }
+  .features__feedback-left p{
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+  }
+  .features__feedback-right{
+    display: flex;
+    align-items: center;
+  }
+  .features__box{
+    padding: 30px 40px 25px 40px;
+    color: white;
+    border-radius: 25px;
+  }
+  .features__box h3{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+  .features__savings-box{
+    background-color: #dc5e26;
+    box-shadow: 0px 6px 0 rgb(221 95 38 / 20%);
+    margin-right: 30px;
+  }
+  .features__rate-box{
+    background-color: #1D263A;
+    box-shadow: 0px 6px 0 rgb(29 38 58 / 20%);
+  }
+  .stars{
+    color: #ff7039;
+  }
+  .promo{
+    display: flex;
+    border-radius: 10px;
+  }
+  .promo__image{
+    background-image:url(img/promo.jpg);
+    align-items: center;
+    background-size: cover;
+    width: 50%;
+    flex-shrink: 0;
+  }
+  .promo__right{
+    background-color: #dd5f26;
+    padding: 160px 60px;
+  }
+  .promo_card{
+    background-color: white;
+    padding: 30px 40px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    border-radius: 25px;
+  }
+  .promo_card p{
+    display: list-item;
+    opacity: 0.8;
+    list-style-position: inside;
+  }
+  .promo_card p::marker {
+    border-radius: 10px;
+    color: #ec6b29;
+  }
+  .orderButton{
+    background-color: #107b1c;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+  }
+  .fa-chevron-right{
+    font-size: 15px;
+    margin-left: 5px;
   }
   .form{
     background-color:  #1D263A;
