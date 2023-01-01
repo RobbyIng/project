@@ -61,3 +61,16 @@ function increaseNumberAnimationStep(i, element, endNumber) {
       initIncreaseNumberAnimation();
     }
   }
+
+  function addSmoothScroll(anchor) {
+    anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+  }
+
+  document.querySelectorAll("a[href^='#']").forEach(el => addSmoothScroll(el));
+  addSmoothScroll(document.querySelector(".more-button"));
