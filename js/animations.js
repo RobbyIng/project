@@ -32,7 +32,6 @@ function increaseNumberAnimationStep(i, element, endNumber) {
       const input = document.createElement("input");
       input.placeholder = "Введите ваш вариант";
       input.type = "text";
-      window.in
 
       formContainer.appendChild(input);
 
