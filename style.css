@@ -106,16 +106,23 @@ body{
     font-family: 'Raleway', sans-serif;
     color: #213053;
     margin: 0;
-    padding: 0 20px 20px 20px;
+    padding: 0 0 20px 0;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    background-color: white;
+    position: fixed;
+    background-color: transparent;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
+    transition: ease 0.25s;
+}
+.header__scrolled{
+  background-color: white;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 .header__logo{
     height: 30px;
@@ -166,7 +173,7 @@ header a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 200px;
     padding-bottom: 115px;
     background: url('img/back.png') no-repeat;
     background-position: center;
